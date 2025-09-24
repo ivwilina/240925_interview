@@ -1,0 +1,140 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5; /* Màu nền nhẹ nhàng */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.student-detail-container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  margin-top: 50px;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50; /* Màu chữ đậm cho tiêu đề */
+  margin-bottom: 20px;
+  font-size: 2.2rem;
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.info-item:last-child {
+  border-bottom: none; /* Bỏ đường viền dưới cho mục cuối cùng */
+}
+
+.info-label {
+  font-weight: bold;
+  color: #555;
+  font-size: 1.1rem;
+}
+
+.info-value {
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.risk-level {
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.risk-level.LOW {
+  background-color: #2ecc71; /* Xanh lá cây */
+  color: white;
+}
+
+.risk-level.MEDIUM {
+  background-color: #f39c12; /* Vàng cam */
+  color: white;
+}
+
+.risk-level.HIGH {
+  background-color: #e74c3c; /* Đỏ */
+  color: white;
+}
+
+.data-section {
+  margin-top: 25px;
+}
+
+.data-section h3 {
+  color: #34495e;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+.data-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.data-item {
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.data-status.ATTEND {
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.data-status.ABSENT {
+  color: #c0392b;
+  font-weight: bold;
+}
+
+.data-status.FAILED {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.back-button {
+  display: block;
+  width: fit-content;
+  margin: 20px auto 0;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #2980b9;
+}
+
+.error, .loading {
+  text-align: center;
+  color: #c0392b;
+  font-weight: bold;
+  margin-top: 50px;
+}
